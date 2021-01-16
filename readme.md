@@ -9,12 +9,7 @@ Emoticons are a great quick indicator of whether someone had a good or bad day. 
 ### Extensible API
 This api will be available to the public in the future for other applications to use our stable backbone. 
 
-### 
+### Installation
+Hi there, 
 
 ### 
-
-Prompt user: 
-- 1 pointed question each day
-
-Score user in category
-Avg. Score of positivity
