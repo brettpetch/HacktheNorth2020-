@@ -1,0 +1,49 @@
+{
+    "1": {
+        "name": "User's Name",
+        "username": "username",
+        "picture": "https://linktomyimage.com",
+        "link": "https://senti.io/username",
+        "joinDate": "timestamp",
+        "sentiment": {
+            "1": {
+                "datetime": "datestamp",
+                "c_response": "user's response data here",
+                "h_response": "user's response data here",
+                "i_response": "user's response data here",
+                "m_response": "user's response data here",
+                "e_response": "user's response data here",
+                "connectedness": {
+                    "neg": 0.0, 
+                    "neu": 0.299, 
+                    "pos": 0.701, 
+                    "compound": 0.8545
+                },
+                "hope": {
+                    "neg": 0.0, 
+                    "neu": 0.299, 
+                    "pos": 0.701, 
+                    "compound": 0.8545
+                },
+                "identity": {
+                    "neg": 0.0, 
+                    "neu": 0.299, 
+                    "pos": 0.701, 
+                    "compound": 0.8545
+                },
+                "meaning": {
+                    "neg": 0.0, 
+                    "neu": 0.299, 
+                    "pos": 0.701, 
+                    "compound": 0.8545
+                },
+                "empowerment": {
+                    "neg": 0.0, 
+                    "neu": 0.299, 
+                    "pos": 0.701, 
+                    "compound": 0.8545
+                }
+            }
+        }
+    }
+}

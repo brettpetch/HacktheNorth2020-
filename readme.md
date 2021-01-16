@@ -15,4 +15,6 @@ This api will be available to the public in the future for other applications to
 
 Prompt user: 
 - 1 pointed question each day
-- 
+
+Score user in category
+Avg. Score of positivity
