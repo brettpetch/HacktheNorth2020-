@@ -1,8 +1,23 @@
 const vader = require('vader-sentiment');
-const input = 'VADER is very smart, handsome, and funny';
-const intensity = vader.SentimentIntensityAnalyzer.polarity_scores(input);
-console.log(intensity);
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-http.createServer(function (req, res) {
-    runInNewContext.writeHead(200 {'Content-Type': ''})
-})
+const app = express();
+const port = 3000;
+
+app.use(cors());
+
+// Configuring body parser middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.post('/api/v1/sentiment', (req, res) => {
+    const sentence = req.body;
+
+    console.log(sentence)
+    sentence.push(sentence)
+});
+
+app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
+
