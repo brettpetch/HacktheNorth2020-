@@ -29,4 +29,4 @@ app.post('/api/v1/response', (req, res) => {
     res.json(scores)
 });
 
-app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
+app.listen(port, () => console.log(`sentimetre server running on ${port}!`));
