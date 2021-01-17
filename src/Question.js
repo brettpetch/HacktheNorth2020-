@@ -21,7 +21,10 @@ export class Question extends React.Component {
         url:"https://sudoer.dev/api/v1/response", 
         data:  this.state
       }).then((response)=>{
-          alert(response.body.compound); 
+          let num = response['data'].compound
+          let rounded = num.toFixed(2) 
+          alert("Your answers have been submitted. Thank you!");
+          alert(`Your overall score is ${rounded}`); 
           this.resetForm();
         console.log(response)
       })
