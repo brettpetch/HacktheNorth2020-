@@ -1,5 +1,6 @@
 # Sentimetre
 
+![https://images2.imgbox.com/8a/26/b1YgfMLi_o.png](https://images2.imgbox.com/8a/26/b1YgfMLi_o.png)
 
 This app is a journaling application that allows users to journal with ease. We use [Vader Sentimant Analysis](https://github.com/vaderSentiment/vaderSentiment-js) to determine the positivity of a set of words with emoji support, then return analytics for users to see how their day went.
 
@@ -61,6 +62,19 @@ This api will be available to the public in the future for other applications to
 ```
 
 ### Installation
-Cool! Let's get started. To get the API up and running, go on over to the server folder, run ``npm install``, then start it by doing ``node server.js``. The API will be served at http://127.0.0.1:3000``.
+Cool! Let's get started. To get the API up and running
 
-### 
+#### Server
+Open up the server folder, run ``npm install``, then start it by doing ``node server.js``. The API will be served at http://127.0.0.1:3000/api/v1/response.
+
+The API is also available from https://sudoer.dev/api/v1/response, free of charge until we get around to locking it down.
+
+#### Front End
+Make sure you've got npm installed. Use ``npm install`` from the main repository, then ``npm run build`` or ``yarn build`` for production environments. ``npm start`` or ``yarn start`` is a good way to get going in a development environment.
+
+### Vader Sentiment Analysis
+https://github.com/cjhutto/vaderSentiment
+
+    VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text
+    (by C.J. Hutto and Eric Gilbert)
+    Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
