@@ -1,0 +1,33 @@
+{
+    "c_score": {
+        "neg": 0.29,
+        "neu": 0.49,
+        "pos": 0.22,
+        "compound": -0.1761
+    },
+    "h_score": {
+        "neg": 0.273,
+        "neu": 0.567,
+        "pos": 0.161,
+        "compound": -0.3343
+    },
+    "i_score": {
+        "neg": 0.175,
+        "neu": 0.825,
+        "pos": 0,
+        "compound": -0.3252
+    },
+    "m_score": {
+        "neg": 0,
+        "neu": 0.827,
+        "pos": 0.173,
+        "compound": 0.0772
+    },
+    "e_score": {
+        "neg": 0.124,
+        "neu": 0.734,
+        "pos": 0.141,
+        "compound": 0.0772
+    },
+    "compound": -0.13623999999999997
+}
