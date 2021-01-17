@@ -65,7 +65,7 @@ This api will be available to the public in the future for other applications to
 Cool! Let's get started. To get the API up and running
 
 #### Server
-Open up the server folder, run ``npm install``, then start it by doing ``node server.js``. The API will be served at http://127.0.0.1:3000/api/v1/response.
+Open up the server folder, run ``npm install``, then start it by doing ``node server.js``. The API will be served at http://127.0.0.1:3001/api/v1/response.
 
 The API is also available from https://sudoer.dev/api/v1/response, free of charge until we get around to locking it down.
 
