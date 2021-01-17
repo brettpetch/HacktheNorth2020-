@@ -1,6 +1,6 @@
 # Sentimetre
 
-![https://images2.imgbox.com/8a/26/b1YgfMLi_o.png](https://images2.imgbox.com/8a/26/b1YgfMLi_o.png)
+![https://raw.githubusercontent.com/brettpetch/HacktheNorth2020-/main/img/final.jpg](https://raw.githubusercontent.com/brettpetch/HacktheNorth2020-/main/img/final.jpg)
 
 This app is a journaling application that allows users to journal with ease. We use [Vader Sentimant Analysis](https://github.com/vaderSentiment/vaderSentiment-js) to determine the positivity of a set of words with emoji support, then return analytics for users to see how their day went.
 
