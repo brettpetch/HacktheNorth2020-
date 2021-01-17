@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Senti
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This app is a journaling application that allows users to journal with ease. We use [Vader Sentimant Analysis](https://github.com/vaderSentiment/vaderSentiment-js) to determine the positivity of a set of words with emoji support, then return analytics for users to see how their day went.
 
-In the project directory, you can run:
+On the backend, we have expressjs for our API endpoint, then have a reactjs front end. This allows for our application to evolve and return the useful data to other applications.
+In the future we intend to further develop this app to 
 
-### `yarn start`
+### Emoticon Support
+Emoticons are a great quick indicator of whether someone had a good or bad day. By using Vader, sentimant of these icons is possible. This allows us to determine of the user has had either a good or bad experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Extensible API
+This api will be available to the public in the future for other applications to use our stable backbone. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Requests: 
+```json
+{
+  "c_sentence": "I feel supported by my family, I miss them. My friends, they’ve been ignoring me. It feels very lonely.",
+  "h_sentence": "I used to be, but not anymore. I feel like I can’t motivate myself without others supporting me.",
+  "i_sentence": "I often feel I cannot express my true emotions. I usually lock them up inside.",
+  "m_sentence": "I do, but I don’t know how to reach them. They feel out of reach.",
+  "e_sentence": "No. I feel like I am going with the flow and I don’t know where it’s taking me."
+}
+```
 
-### `yarn test`
+#### Responses: 
+```json
+{
+    "c_score": {
+        "neg": 0.29,
+        "neu": 0.49,
+        "pos": 0.22,
+        "compound": -0.1761
+    },
+    "h_score": {
+        "neg": 0.273,
+        "neu": 0.567,
+        "pos": 0.161,
+        "compound": -0.3343
+    },
+    "i_score": {
+        "neg": 0.175,
+        "neu": 0.825,
+        "pos": 0,
+        "compound": -0.3252
+    },
+    "m_score": {
+        "neg": 0,
+        "neu": 0.827,
+        "pos": 0.173,
+        "compound": 0.0772
+    },
+    "e_score": {
+        "neg": 0.124,
+        "neu": 0.734,
+        "pos": 0.141,
+        "compound": 0.0772
+    },
+    "compound": -0.13623999999999997
+}
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
+Cool! Let's get started. To get the API up and running, go on over to the server folder, run ``npm install``, then start it by doing ``node server.js``. The API will be served at http://127.0.0.1:3000``.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 
