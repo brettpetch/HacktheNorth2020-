@@ -21,7 +21,7 @@ export class Question extends React.Component {
         url:"https://sudoer.dev/api/v1/response", 
         data:  this.state
       }).then((response)=>{
-          alert("Your answers have been submitted. Thank you!"); 
+          alert(response.body.compound); 
           this.resetForm();
         console.log(response)
       })
